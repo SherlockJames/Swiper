@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<audio src="adiuo/Alan WalkerGavin James - Tired [mqms2].mp3" loop="loop"></audio>
+		<div class="swiper-container">
+            <div class="swiper-wrapper">
+            	
+            	
+			<div class="swiper-slide move">
+				<img src="img/cover.png"/>
+				<img src="img/btn_join.png"/>
+				<img src="img/wording_cover.png"/>
+				<div class="zhuan">
+					<div class="zhuan1"></div>
+					<div class="xian"></div>
+				</div>
+			</div>
+			
+			
+			<div class="swiper-slide  move1">
+				<div class="swiper-container1">
+            <div class="swiper-wrapper">
+			<div class="swiper-slide move1_1">
+				<img src="img/circle-design.png"/>
+				<img src="img/people_design.png"/>
+				<img src="img/floating_design.png"/>
+				<img src="img/wording_design.png"/>
+				<img src="img/check_production.png"/>
+			</div>
+			<div class="swiper-slide move1_2">
+				<img src="img/introduction_design.png"/>
+			</div>
+			
+			</div>
+            <div class="swiper-pagination"></div>
+           </div>
+			</div>
+			
+			
+			<div class="swiper-slide move2">
+				<div class="swiper-container2">
+            <div class="swiper-wrapper">
+			<div class="swiper-slide move2_1">
+				<img src="img/circle-production.png"/>
+				<img src="img/people_production.png"/>
+				<img src="img/floating_develop.png"/>
+				<img src="img/wording_production.png"/>
+				<img src="img/check_develop.png"/>
+			</div>
+			<div class="swiper-slide move2_2">
+				<img src="img/introduction_production.png"/>
+			</div>
+			
+			</div>
+            <div class="swiper-pagination"></div>
+           </div>
+			</div>
+			
+			
+			<div class="swiper-slide move3">
+				<div class="swiper-container3">
+            <div class="swiper-wrapper">
+			<div class="swiper-slide move3_1">
+				<img src="img/circle.png"/>
+				<img src="img/people.png"/>
+				<img src="img/floating_production.png"/>
+				<img src="img/wording.png"/>
+				<img src="img/check_design.png"/>
+			</div>
+			<div class="swiper-slide move3_2">
+				<img src="img/introduction.png"/>
+			</div>
+			
+			</div>
+            <div class="swiper-pagination"></div>
+           </div>
+			</div>
+			
+			
+            <div class="swiper-pagination"></div>
+           </div>
+	</body>
+	<script type="text/javascript">
+	var mySwiper = new Swiper ('.swiper-container', {
+    direction : 'vertical',
+    pagination:".swiper-pagination",
+    autoplayDisableOnInteraction:false,
+       loop: true,	
+  })  
+
+    var mySwiper1 = new Swiper ('.swiper-container1', {
+    direction : 'horizontal',
+    pagination:".swiper-pagination",
+    autoplayDisableOnInteraction:false,
+       loop: true,	
+  })   
+    
+    var mySwiper2 = new Swiper ('.swiper-container2', {
+    direction : 'horizontal',
+    pagination:".swiper-pagination",
+    autoplayDisableOnInteraction:false,
+       loop: true,	
+  })   
+    
+    var mySwiper3 = new Swiper ('.swiper-container3', {
+    direction : 'horizontal',
+    pagination:".swiper-pagination",
+    autoplayDisableOnInteraction:false,
+       loop: true,	
+  })  
+  
+  
+  
+  var  ad=document.querySelector("audio")
+   ad.play();
+
+   $(".zhuan").click(function(){
+   	if($(".zhuan>.xian").css("display")!="none"){
+   		$(".zhuan>.xian").css("display","none")
+   ad.play();
+   	}else{
+   		$(".zhuan>.xian").css("display","inline-block")
+   ad.pause();
+   	}
+   })
+	</script>
+</html>
